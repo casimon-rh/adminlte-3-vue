@@ -1,13 +1,13 @@
-import {IUser} from './user';
+import type { IUser } from './user'
 export interface IAuthState {
-    token: string;
-    user: IUser;
+    token: string | null
+    user: IUser| null
 }
 
 export interface IAuthModule {
-    namespaced: boolean;
-    state: IAuthState;
-    mutations: any;
-    actions: any;
-    getters: any;
+    namespaced: boolean
+    state: IAuthState
+    mutations: any
+    actions: any
+    getters: any
 }
